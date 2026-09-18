@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/PROMPTEUR-Share</link>
     <description>Mises à jour de Prompteur</description>
     <item>
+      <title>Version 1.1.4</title>
+      <description><![CDATA[
+<h3>Remonte les erreurs de reconnaissance vocale au lieu de rester muet</h3>
+<p>SpeechEngine relançait silencieusement une tâche à chaque échec (recognizer indisponible, recognitionTask en erreur) sans jamais rien dire à l'UI — la réunion tournait sans qu'aucune transcription n'apparaisse et sans indice sur la cause. Ajoute onErreur, propagé jusqu'au bandeau d'erreur de l'onglet Réunion, avec un backoff d'1s pour éviter une boucle serrée en cas d'échec systématique.</p>
+<p>Passe en 1.1.4 (5).</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 20:48:39 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/PROMPTEUR-Share/releases/download/v1.1.4/Prompteur-1.1.4.zip"
+                 sparkle:edSignature="8VaxQLx3QI4Gaj5a9au3Uvp+7mr/nwA2gSTjmGJuCl9tjgocrGkE8qG6eX5kDa2GJGBW2+AsnxfqRkzfyeSDAQ=="
+                 length="1441920"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.1.3</title>
       <description><![CDATA[
 <h3>Corrige le crash du micro quand une autre app se dispute le périphérique</h3>
