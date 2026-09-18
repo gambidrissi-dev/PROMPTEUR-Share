@@ -5,6 +5,23 @@
     <link>https://github.com/gambidrissi-dev/PROMPTEUR-Share</link>
     <description>Mises à jour de Prompteur</description>
     <item>
+      <title>Version 1.1.5</title>
+      <description><![CDATA[
+<h3>Démarrage rapide (barre de menu) + panneau sous le notch + micro qui suit le device par défaut</h3>
+<p>Icône de barre de menu : un clic démarre/arrête une réunion directement, sans ouvrir la fenêtre principale — l'équivalent de décrocher un FaceTime. Pendant la réunion, un petit panneau flottant non activable s'affiche sous le notch (géométrie via screen.safeAreaInsets, patron repris de boring.notch) avec la durée et la dernière bribe transcrite.</p>
+<p>CameraController écoutait le micro par défaut une seule fois à la configuration de la session, sans jamais suivre un changement d'entrée fait après coup (Mac → AirPods/casque) : ajoute un listener Core Audio sur kAudioHardwarePropertyDefaultInputDevice qui rebranche l'entrée audio à la volée. Le tap système, lui, intercepte au niveau du mixage avant le routage matériel — il suit déjà les deux sans code supplémentaire.</p>
+<p>Passe en 1.1.5 (6).</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 20:59:28 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/PROMPTEUR-Share/releases/download/v1.1.5/Prompteur-1.1.5.zip"
+                 sparkle:edSignature="PatjZHuz8XHHV1ZYnADB9/yGIgtWfQi5nQzK+XB7/HqP5/KnSrqXo+TWcCu3G37V9qtjMYt3dIVwG4oirbW3Aw=="
+                 length="1459609"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.1.4</title>
       <description><![CDATA[
 <h3>Remonte les erreurs de reconnaissance vocale au lieu de rester muet</h3>
