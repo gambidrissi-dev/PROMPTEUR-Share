@@ -5,6 +5,23 @@
     <link>https://github.com/gambidrissi-dev/PROMPTEUR-Share</link>
     <description>Mises à jour de Prompteur</description>
     <item>
+      <title>Version 1.1.2</title>
+      <description><![CDATA[
+<h3>Corrige le crash du mode Réunion et ajoute le picker de modèles</h3>
+<p>build-app.sh écrit son propre Info.plist, indépendant de project.yml/Xcode : il n'avait jamais reçu NSSpeechRecognitionUsageDescription ni NSAudioCaptureUsageDescription. SFSpeechRecognizer fait planter le process (TCC/SIGABRT) dès qu'il est sollicité sans cette clé — d'où le plantage systématique de l'onglet Réunion sur le build publié.</p>
+<p>Réglages &gt; Réunion : le modèle se choisit maintenant dans une liste (GET /models, commun aux trois fournisseurs) au lieu d'être tapé à la main.</p>
+<p>Passe en 1.1.2 (3).</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 20:26:06 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/PROMPTEUR-Share/releases/download/v1.1.2/Prompteur-1.1.2.zip"
+                 sparkle:edSignature="2RfpFfGo99T7apRORi5wiIJPE+7/jWXCkRagIULYjqw9/XCs2cADsY80Mffi1p5WtKkiLlWIeerQU1TPqZ/+BA=="
+                 length="1440078"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.1.1</title>
       <description><![CDATA[
 <h3>Corrige la version en 1.1.1</h3>
